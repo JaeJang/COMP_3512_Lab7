@@ -37,4 +37,17 @@ int max(const std::vector<int> & v) {
 	return max;
 }
 
+int min(const std::vector<int> & v) {
+	int min = v[0];
+
+	std::vector<int>::const_iterator iter = v.begin();
+
+	for (iter = v.begin(); iter != v.end(); ++iter) {
+		if (min > *iter) {
+			min = *iter;
+		}
+	}
+
+	return min;
+}
 
