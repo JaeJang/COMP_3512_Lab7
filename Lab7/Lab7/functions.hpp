@@ -18,5 +18,23 @@ int sum(const std::vector<int> & v) {
 	return sum;
 }
 
+int max(const std::vector<int> & v) {
+	int max = v[0];
+
+	std::vector<int>::const_iterator iter = v.begin();
+
+	for (iter = v.begin() +1 ; iter != v.end(); ++iter) {
+		if (max < *iter) {
+			max = *iter;
+		}
+	}
+
+	/*for (int a : v) {
+		if (a > max) {
+			max = a;
+		}
+	}*/
+	return max;
+}
 
 
