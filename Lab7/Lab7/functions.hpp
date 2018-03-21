@@ -51,3 +51,17 @@ int min(const std::vector<int> & v) {
 	return min;
 }
 
+double average(const std::vector<int> & v) {
+	double average;
+
+	std::vector<int>::const_iterator iter = v.begin();
+
+	for (iter = v.begin(); iter != v.end(); ++iter) {
+		average += *iter;
+	}
+
+	average /= v.size();
+
+	return average;
+}
+
