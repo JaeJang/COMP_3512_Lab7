@@ -17,7 +17,7 @@ int main() {
 	v.push_back(19);
 	v.push_back(3);
 
-	cout << min(v) << endl;
+	cout << average(v) << endl;
 
 
 	cout << "Press any button to exit";
